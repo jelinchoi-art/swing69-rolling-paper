@@ -1,0 +1,23 @@
+[5분 설치 순서]
+
+1) Supabase 새 프로젝트 생성
+2) Supabase > SQL Editor에서 schema.sql 실행
+3) 이 폴더 전체를 GitHub 새 저장소에 업로드
+4) Streamlit Community Cloud에서 GitHub 저장소 연결, app.py 배포
+5) Streamlit 앱 Settings > Secrets에 아래 4개 입력
+
+SUPABASE_URL = "https://xxxxx.supabase.co"
+SUPABASE_SERVICE_KEY = "service_role 키"
+ADMIN_PASSWORD = "나만 아는 긴 비밀번호"
+PARTICIPANT_CODE = "SWING69"
+
+[친구용]
+https://앱주소.streamlit.app/?invite=SWING69
+
+[관리자용]
+https://앱주소.streamlit.app/?mode=admin
+
+관리자 화면에서는 문구 수정/삭제/숨김, 앞뒤 페이지 이동, X/Y 위치,
+카드 폭, 글자 크기 수정, 겹침 확인, A3 PDF/PNG 다운로드가 가능합니다.
+
+주의: SUPABASE_SERVICE_KEY와 ADMIN_PASSWORD는 GitHub에 직접 올리지 마세요.
